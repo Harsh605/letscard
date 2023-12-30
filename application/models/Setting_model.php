@@ -20,7 +20,7 @@ class Setting_model extends MY_Model
         return $Query->row();
     }
 
-    public function update($mobile, $referral_amount, $level_1, $level_2, $level_3, $level_4, $level_5, $referral_id, $referral_link, $contact_us, $terms, $privacy_policy, $help_support, $default_otp, $game_for_private, $app_version, $joining_amount, $admin_commission, $whats_no, $bonus, $bonus_amount, $payment_gateway, $symbol, $razor_api_key, $razor_secret_key, $cashfree_client_id, $cashfree_client_secret, $cashfree_stage, $paytm_mercent_id, $paytm_mercent_key,  $share_text, $bank_detail_field, $adhar_card_field, $upi_field, $about_us, $refund_policy, $app_message, $app_url, $logo, $payumoney_key, $payumoney_salt, $upi_merchant_id, $upi_secret_key, $upi_id, $neokred_client_secret, $neokred_project_id)
+    public function update($mobile, $referral_amount, $level_1, $level_2, $level_3, $level_4, $level_5, $referral_id, $referral_link, $contact_us, $terms, $privacy_policy, $help_support, $default_otp, $game_for_private, $app_version, $joining_amount, $admin_commission, $whats_no, $bonus, $bonus_amount, $payment_gateway, $symbol, $razor_api_key, $razor_secret_key,$upi_payment_api_key, $cashfree_client_id, $cashfree_client_secret, $cashfree_stage, $paytm_mercent_id, $paytm_mercent_key,  $share_text, $bank_detail_field, $adhar_card_field, $upi_field, $about_us, $refund_policy, $app_message, $app_url, $logo, $payumoney_key, $payumoney_salt, $upi_merchant_id, $upi_secret_key, $upi_id, $neokred_client_secret, $neokred_project_id)
     {
         $data = ['updated_date' => date('Y-m-d H:i:s')];
 
@@ -59,7 +59,7 @@ class Setting_model extends MY_Model
         }
         if (!empty($terms)) {
             $data['terms'] = $terms;
-        }
+			}
         if (!empty($privacy_policy)) {
             $data['privacy_policy'] = $privacy_policy;
         }
@@ -122,6 +122,11 @@ class Setting_model extends MY_Model
         if (!empty($razor_secret_key)) {
             $data['razor_secret_key'] = $razor_secret_key;
         }
+		//Added by khemit for regarding upi payment key start here
+		if (!empty($upi_payment_api_key)) {
+            $data['upi_payment_api_key'] = $upi_payment_api_key;
+        }
+		//Added by khemit for regarding upi payment key end here
         if (!empty($cashfree_client_id)) {
             $data['cashfree_client_id'] = $cashfree_client_id;
         }
@@ -158,6 +163,8 @@ class Setting_model extends MY_Model
         if (!empty($neokred_project_id)) {
             $data['neokred_project_id'] = $neokred_project_id;
         }
+		
+
 
         if ($this->db->update('tbl_admin', $data)) {
             return $this->db->last_query();

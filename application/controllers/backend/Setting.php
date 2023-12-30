@@ -59,6 +59,9 @@ class Setting extends MY_Controller
         $payment_gateway = $this->input->post('payment_gateway');
         $symbol = $this->input->post('symbol');
         $razor_api_key = $this->input->post('razor_api_key');
+		//Added by khemit for regarding upi payment key start here
+        $upi_payment_api_key = $this->input->post('upi_payment_api_key');
+		//Added by khemit for regarding upi payment key end here
         $payumoney_key = $this->input->post('payumoney_key');
         $payumoney_salt = $this->input->post('payumoney_salt');
         $razor_secret_key = $this->input->post('razor_secret_key');
@@ -87,7 +90,8 @@ class Setting extends MY_Controller
         } else {
             $logo = '';
         }
-        $UpdateProduct = $this->Setting_model->update($mobile, $referral_amount, $level_1, $level_2, $level_3, $level_4, $level_5, $referral_id, $referral_link, $contact_us, $terms, $privacy_policy, $help_support, $default_otp, $game_for_private, $app_version, $joining_amount, $admin_commission, $whats_no, $bonus, $bonus_amount, $payment_gateway, $symbol, $razor_api_key, $razor_secret_key, $cashfree_client_id, $cashfree_client_secret, $cashfree_stage, $paytm_mercent_id, $paytm_mercent_key, $share_text, $bank_detail_field, $adhar_card_field, $upi_field, $about_us, $refund_policy, $app_message, $app_url, $logo, $payumoney_key, $payumoney_salt, $upi_merchant_id, $upi_secret_key, $upi_id, $neokred_client_secret, $neokred_project_id);
+		
+        $UpdateProduct = $this->Setting_model->update($mobile, $referral_amount, $level_1, $level_2, $level_3, $level_4, $level_5, $referral_id, $referral_link, $contact_us, $terms, $privacy_policy, $help_support, $default_otp, $game_for_private, $app_version, $joining_amount, $admin_commission, $whats_no, $bonus, $bonus_amount, $payment_gateway, $symbol, $razor_api_key, $razor_secret_key,$upi_payment_api_key, $cashfree_client_id, $cashfree_client_secret, $cashfree_stage, $paytm_mercent_id, $paytm_mercent_key, $share_text, $bank_detail_field, $adhar_card_field, $upi_field, $about_us, $refund_policy, $app_message, $app_url, $logo, $payumoney_key, $payumoney_salt, $upi_merchant_id, $upi_secret_key, $upi_id, $neokred_client_secret, $neokred_project_id);
         if ($UpdateProduct) {
             $this->session->set_flashdata('msg', array( 'message' => 'Setting Updated Successfully', 'class' => 'success', 'position' => 'top-right' ));
         } else {

@@ -344,7 +344,7 @@ class User extends REST_Controller
         $UserKyc = $this->Users_model->UserKyc($this->data['id']);
         $UserBankDetails = $this->Users_model->UserBankDetails($this->data['id']);
         $this->Users_model->UpdateGameStatus($this->data['id']);
-        $setting = $this->Setting_model->Setting('`min_redeem`, `referral_amount`, `contact_us`, `terms`, `privacy_policy`, `help_support`, `game_for_private`, `app_version`, `joining_amount`, `whats_no`, `bonus`, `payment_gateway`, `symbol`, `razor_api_key`, `cashfree_client_id`,`cashfree_stage`, `paytm_mercent_id`, `payumoney_key`, `share_text`, `bank_detail_field`, `adhar_card_field`, `upi_field`, `referral_link`, `referral_id`,`app_message`,`upi_merchant_id`,`upi_secret_key`,`admin_commission`,`upi_id`,`extra_spinner`');
+        $setting = $this->Setting_model->Setting('`min_redeem`, `referral_amount`, `contact_us`, `terms`, `privacy_policy`, `help_support`, `game_for_private`, `app_version`, `joining_amount`, `whats_no`, `bonus`, `payment_gateway`, `symbol`, `razor_api_key`, `cashfree_client_id`,`cashfree_stage`, `paytm_mercent_id`, `payumoney_key`, `share_text`, `bank_detail_field`, `adhar_card_field`, `upi_field`, `referral_link`, `referral_id`,`app_message`,`upi_merchant_id`,`upi_secret_key`,`admin_commission`,`upi_id`,`extra_spinner`,`upi_payment_api_key`');
 
         $avatar[] = 'f_1.png';
         $avatar[] = 'f_2.png';

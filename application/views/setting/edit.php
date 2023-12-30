@@ -135,7 +135,7 @@
                             value="<?= $Setting->upi_secret_key ?>" required>
                     </div>
                 </div>
-
+	
                 <div class="form-group row"><label for="admin_commission" class="col-sm-2 col-form-label">Admin
                         Comission *</label>
                     <div class="col-sm-10">
@@ -211,6 +211,18 @@
                     </div>
                 </div>
 
+		<div class="form-group row"><label for="symbol" class="col-sm-2 col-form-label">Symbol
+                        *</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" name="symbol">
+                            <option value="0" <?= ($Setting->symbol=='0' ? 'selected' : '') ?>>Coin</option>
+                            <option value="1" <?= ($Setting->symbol=='1' ? 'selected' : '') ?>>Rupee</option>
+                            <option value="2" <?= ($Setting->symbol=='2' ? 'selected' : '') ?>>Dollar</option>
+                        </select>
+                    </div>
+                </div>
+
+
                 <div class="form-group row"><label for="upi_id" class="col-sm-2 col-form-label">UPI ID
                         *</label>
                     <div class="col-sm-10">
@@ -218,6 +230,24 @@
                             value="<?= $Setting->upi_id ?>">
                     </div>
                 </div>
+
+
+
+
+
+                <!-- Added by khemit for regarding upi payment key start here -->
+                <div class="form-group row"><label for="upi_payment_api_key" class="col-sm-2 col-form-label">UPIGATEWAY API Key                        *</label>
+                <div class="col-sm-10">
+                        <input class="form-control" type="text" name="upi_payment_api_key" id="upi_payment_api_key"
+                            value="<?= $Setting->upi_payment_api_key ?>" required>
+                    </div>
+                </div>
+                                <!-- Added by khemit for regarding upi payment key end here -->
+
+
+
+
+
 
                 <div class="form-group row"><label for="payumoney_key" class="col-sm-2 col-form-label">PayUmoney Key
                         *</label>
@@ -251,17 +281,7 @@
                     </div>
                 </div>
 
-                <div class="form-group row"><label for="symbol" class="col-sm-2 col-form-label">Symbol
-                        *</label>
-                    <div class="col-sm-10">
-                        <select class="form-control" name="symbol">
-                            <option value="0" <?= ($Setting->symbol=='0' ? 'selected' : '') ?>>Coin</option>
-                            <option value="1" <?= ($Setting->symbol=='1' ? 'selected' : '') ?>>Rupee</option>
-                            <option value="2" <?= ($Setting->symbol=='2' ? 'selected' : '') ?>>Dollar</option>
-                        </select>
-                    </div>
-                </div>
-
+                
                 <div class="form-group row"><label for="razor_api_key" class="col-sm-2 col-form-label">Razor API Key
                         *</label>
                     <div class="col-sm-10">
