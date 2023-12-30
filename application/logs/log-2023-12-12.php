@@ -1,0 +1,39 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-12-12 00:55:08 --> 404 Page Not Found: Aws/credentials
+ERROR - 2023-12-12 06:57:28 --> 404 Page Not Found: Dns_query/index
+ERROR - 2023-12-12 07:05:50 --> 404 Page Not Found: Dns_query/index
+ERROR - 2023-12-12 09:34:07 --> 404 Page Not Found: Aws/credentials
+ERROR - 2023-12-12 09:39:56 --> 404 Page Not Found: Dns_query/index
+ERROR - 2023-12-12 09:47:20 --> 404 Page Not Found: Dns_query/index
+ERROR - 2023-12-12 10:29:21 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:29:22 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:29:27 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:35:19 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:35:20 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:35:25 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:41:26 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:41:27 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 10:41:36 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-12 11:11:39 --> 404 Page Not Found: Dns_query/index
+ERROR - 2023-12-12 11:11:40 --> 404 Page Not Found: Resolve/index
+ERROR - 2023-12-12 11:11:40 --> 404 Page Not Found: Doh/index
+ERROR - 2023-12-12 12:34:20 --> 404 Page Not Found: Actuator/gateway
+ERROR - 2023-12-12 15:39:00 --> 404 Page Not Found: Webui/index
+ERROR - 2023-12-12 16:36:32 --> 404 Page Not Found: Actuator/gateway
+ERROR - 2023-12-12 16:57:52 --> 404 Page Not Found: Data/post
+ERROR - 2023-12-12 16:57:52 --> 404 Page Not Found: Data/post
+ERROR - 2023-12-12 17:26:48 --> 404 Page Not Found: Bicomposer/index
+ERROR - 2023-12-12 18:35:33 --> 404 Page Not Found: L9IMK86NARbCPX1gQOaxJu2odBC/index
+ERROR - 2023-12-12 19:04:09 --> 404 Page Not Found: UserById/index
+ERROR - 2023-12-12 19:04:15 --> 404 Page Not Found: AddBet/index
+ERROR - 2023-12-12 19:14:44 --> Severity: Warning --> Undefined variable $random /var/www/html/letscard/application/controllers/api/Cron.php 1966
+ERROR - 2023-12-12 19:38:58 --> 404 Page Not Found: YdJU/index
+ERROR - 2023-12-12 19:38:59 --> 404 Page Not Found: WGGX/index
+ERROR - 2023-12-12 20:41:57 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-12-12 20:42:00 --> 404 Page Not Found: Sitemapxml/index
+ERROR - 2023-12-12 20:57:53 --> 404 Page Not Found: UserById/index
+ERROR - 2023-12-12 20:58:11 --> 404 Page Not Found: AddBet/index
+ERROR - 2023-12-12 21:04:59 --> 404 Page Not Found: Ews/exchange
+ERROR - 2023-12-12 22:52:42 --> 404 Page Not Found: UserById/index
+ERROR - 2023-12-12 22:52:48 --> 404 Page Not Found: AddBet/index

@@ -1,0 +1,30 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-12-10 00:51:44 --> 404 Page Not Found: Autodiscover/autodiscover.json
+ERROR - 2023-12-10 03:48:08 --> 404 Page Not Found: Login/index
+ERROR - 2023-12-10 08:53:41 --> 404 Page Not Found: Aws/credentials
+ERROR - 2023-12-10 10:07:33 --> 404 Page Not Found: 6iqL/index
+ERROR - 2023-12-10 18:36:30 --> 404 Page Not Found: Webui/index
+ERROR - 2023-12-10 18:46:26 --> 404 Page Not Found: Geoserver/web
+ERROR - 2023-12-10 19:35:48 --> 404 Page Not Found: WXEh/index
+ERROR - 2023-12-10 19:35:49 --> 404 Page Not Found: 6kXd/index
+ERROR - 2023-12-10 20:36:10 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-12-10 20:36:12 --> 404 Page Not Found: Sitemapxml/index
+ERROR - 2023-12-10 20:54:47 --> 404 Page Not Found: Sftpjson/index
+ERROR - 2023-12-10 21:03:07 --> 404 Page Not Found: Sftp_configjson/index
+ERROR - 2023-12-10 21:06:37 --> 404 Page Not Found: Ep1v/index
+ERROR - 2023-12-10 21:06:38 --> 404 Page Not Found: GWqN/index
+ERROR - 2023-12-10 21:11:24 --> 404 Page Not Found: Ftpsyncsettings/index
+ERROR - 2023-12-10 21:19:41 --> 404 Page Not Found: Deployment_configjson/index
+ERROR - 2023-12-10 21:27:57 --> 404 Page Not Found: Vscode/sftp.json
+ERROR - 2023-12-10 21:32:33 --> 404 Page Not Found: Manage/account
+ERROR - 2023-12-10 21:36:10 --> 404 Page Not Found: Config/sftp.json
+ERROR - 2023-12-10 21:38:18 --> 404 Page Not Found: Manage/account
+ERROR - 2023-12-10 22:12:41 --> 404 Page Not Found: Cgi_bin/login.cgi
+ERROR - 2023-12-10 22:17:58 --> 404 Page Not Found: Cgi_bin/login.cgi
+ERROR - 2023-12-10 22:22:00 --> 404 Page Not Found: Logonhtm/index
+ERROR - 2023-12-10 22:27:41 --> 404 Page Not Found: Logonhtm/index
+ERROR - 2023-12-10 22:31:51 --> 404 Page Not Found: Loginjsp/index
+ERROR - 2023-12-10 23:15:40 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-10 23:15:41 --> 404 Page Not Found: Core/.env
+ERROR - 2023-12-10 23:15:41 --> 404 Page Not Found: Core/.env
