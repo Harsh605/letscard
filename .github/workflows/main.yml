@@ -1,0 +1,38 @@
+name: Deploy Main and Developer
+
+on:
+  push:
+    branches:
+      - main
+      - developer
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set Secrets based on Branch
+        run: |
+          if [ "${{ github.event_name }}" == "push" ]; then
+            if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+              echo "MAIN_HOST=${{ secrets.HOST }}" >> $GITHUB_ENV
+              echo "MAIN_USERNAME=${{ secrets.USERNAME }}" >> $GITHUB_ENV
+              echo "MAIN_SSH_PRIVATE_KEY=${{ secrets.SSH_PRIVATE_KEY }}" >> $GITHUB_ENV
+            elif [ "${{ github.ref }}" == "refs/heads/developer" ]; then
+              echo "MAIN_HOST=${{ secrets.TEST_HOST }}" >> $GITHUB_ENV
+              echo "MAIN_USERNAME=${{ secrets.TEST_USERNAME }}" >> $GITHUB_ENV
+              echo "MAIN_SSH_PRIVATE_KEY=${{ secrets.TEST_SSH_PRIVATE_KEY }}" >> $GITHUB_ENV
+            fi
+          fi
+
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ env.MAIN_HOST }}
+          username: ${{ env.MAIN_USERNAME }}
+          key: ${{ env.MAIN_SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /var/www/html/letscard/
+            git pull origin ${{ github.ref }}
+            git status
