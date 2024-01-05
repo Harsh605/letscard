@@ -120,5 +120,14 @@ class Coin_plan_model extends MY_Model
         $Query = $this->db->get();
         return $Query->row();
     }
+	
+	//Added by  khemit
+	public function AddCoin($data)
+    {
+
+        if ($this->db->insert('tbl_purchase', $data)) {
+            return $this->db->insert_id();
+        }
+    }
 
 }
